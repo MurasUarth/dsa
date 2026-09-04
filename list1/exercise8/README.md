@@ -1,0 +1,1 @@
+## Exercício 8. Implemente uma função void min_max(int *v, int n, int *min, int *max) que receba um vetor de inteiros e seu tamanho e armazene, nas variáveis apontadas por min e max, o menor e o maior elemento do vetor.

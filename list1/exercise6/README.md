@@ -1,0 +1,1 @@
+## Exercício 6. Implemente uma função int soma(int *v, int n) que receba um vetor de inteiros e seu tamanho e retorne a soma de seus elementos
