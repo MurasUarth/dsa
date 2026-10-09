@@ -38,4 +38,6 @@ int countHigherValues(Head *head, int value);
 
 void removeValue(Head *head, int value);
 
+void revertList(Head *head);
+
 #endif

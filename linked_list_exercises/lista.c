@@ -207,3 +207,30 @@ void removeValue(Head *head, int value) {
         currentNode = currentNode->pNext;
     }
 }
+
+void revertList(Head *head) {
+  if(head->pFirst == NULL) {
+    printf("A lista está vazia.\n");
+    return;
+  }
+
+  if(head->pFirst->pNext == NULL) {
+    printf("A lista só tem um item.\n");
+    return;
+  }
+
+  Node *previousNode = NULL;
+  Node *currentNode = head->pFirst;
+  Node *nextNode = NULL;
+
+  while(currentNode != NULL) {
+    nextNode = currentNode->pNext;
+    
+    currentNode->pNext = previousNode;
+    
+    previousNode = currentNode;
+    currentNode = nextNode;
+  }
+  
+  head->pFirst = previousNode;
+}
